@@ -1,8 +1,5 @@
 Collaborators:
 
-Kyle Wade
-Jerry Qiao
-Youssef
-Delvin
-Divneet
-Jim Chu
+Kyle Wade, Jerry Qiao, Youssef, Delvin, Divneet, and Jim Chu.
+
+ECE45 Project
