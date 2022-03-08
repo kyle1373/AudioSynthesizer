@@ -337,7 +337,6 @@ class BeeperPanel extends JPanel {
                 buf[(i*2)+1] = buf[i*2];
             }
         }
-
         try {
             byte[] b = buf;
             AudioInputStream ais = new AudioInputStream(

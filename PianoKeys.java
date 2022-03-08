@@ -12,6 +12,8 @@ import javax.swing.SwingUtilities;
 /**
  * This class had a lot of help with this reference guide:
  * (https://docs.oracle.com/javase/tutorial/sound/MIDI-synth.html)
+ * 
+ * Also big help from Leo Ono on youtube
  */
 public class PianoKeys extends JPanel implements KeyListener {
     
@@ -48,12 +50,12 @@ public class PianoKeys extends JPanel implements KeyListener {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.translate(50, 50);
+        g.translate(100, 500);
 
-        g.drawString("Due to keyboard rollover limitations on certain computers,", 0, -45);
-        g.drawString("pressing 3 or more keys may lead to inaccurate keyboard", 0 , -30);
-        g.drawString("inputs. However, 2 or fewer keys should workperfectly fine." , 0, -15);
-        g.drawString("Enjoy! -Kyle", 0, 0);
+        g.drawString("Due to keyboard rollover limitations on certain computers,", 0, -55);
+        g.drawString("pressing 3 or more keys may lead to inaccurate keyboard", 0 , -40);
+        g.drawString("inputs. However, 2 or fewer keys should work perfectly fine." , 0, -25);
+        g.drawString("Enjoy! -Kyle", 0, -10);
         
         // draw white keys
         final int WHITE_KEY_WIDTH = 30;
