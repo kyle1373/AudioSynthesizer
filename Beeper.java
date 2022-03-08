@@ -172,12 +172,14 @@ class BeeperPanel extends JPanel {
 
         // TODO comment out to try KeyListener!
         //bPlay.setFocusable(false);
+        /*
         bPlay.addKeyListener( new KeyAdapter(){
             @Override
             public void keyPressed(KeyEvent ke) {
                 loopSound(true);
             }
         } );
+        */
         bPlay.addMouseListener( new MouseAdapter() {
                 @Override
                 public void mousePressed(MouseEvent me) {
@@ -191,6 +193,7 @@ class BeeperPanel extends JPanel {
             } );
         play.add( bPlay );
 
+        /*
         try {
             clip = AudioSystem.getClip();
 
@@ -213,6 +216,7 @@ class BeeperPanel extends JPanel {
         } catch(Exception e) {
             e.printStackTrace();
         }
+        */
 
         add(play, BorderLayout.CENTER);
 

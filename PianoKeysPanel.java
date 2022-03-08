@@ -15,7 +15,8 @@ import javax.swing.SwingUtilities;
  * 
  * Also big help from Leo Ono on youtube
  */
-public class PianoKeys extends JPanel implements KeyListener {
+ 
+public class PianoKeysPanel extends JPanel implements KeyListener {
     
     // Setting up the environment, like the Synthesizer and audio channels
     private Synthesizer piano;
@@ -30,7 +31,7 @@ public class PianoKeys extends JPanel implements KeyListener {
     private boolean[] keyOn = new boolean[allKeys.length()];
     private static final int KEYS_PER_OCTAVE = 12;
     
-    public PianoKeys() {
+    public PianoKeysPanel() {
         addKeyListener(this);
         startPiano();
     }
@@ -50,7 +51,7 @@ public class PianoKeys extends JPanel implements KeyListener {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.translate(100, 500);
+        //g.translate(100, 500);
 
         g.drawString("Due to keyboard rollover limitations on certain computers,", 0, -55);
         g.drawString("pressing 3 or more keys may lead to inaccurate keyboard", 0 , -40);
@@ -132,7 +133,7 @@ public class PianoKeys extends JPanel implements KeyListener {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                PianoKeys view = new PianoKeys();
+                PianoKeysPanel view = new PianoKeysPanel();
                 JFrame frame = new JFrame();
                 frame.setSize(1000, 600);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
