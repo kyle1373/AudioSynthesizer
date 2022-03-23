@@ -8,6 +8,8 @@
         "libs/lwjgl-openal-javadoc.jar",
         "libs/lwjgl-openal-natives-windows.jar",
         "libs/lwjgl-openal-sources.jar",
-        "libs/lwjgl-sources.jar"
+        "libs/lwjgl-sources.jar",
+        "libs/lwjgl-natives-macos.jar",
+        "libs/lwjgl-openal-natives-macos.jar"
     ]
 }
