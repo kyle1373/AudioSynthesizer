@@ -1,0 +1,22 @@
+{
+  "build": "release",
+  "mode": "zip",
+  "selectedAddons": [],
+  "platform": [
+    "windows"
+  ],
+  "descriptions": false,
+  "compact": false,
+  "hardcoded": false,
+  "javadoc": true,
+  "includeJSON": true,
+  "source": true,
+  "osgi": false,
+  "language": "groovy",
+  "contents": [
+    "lwjgl",
+    "lwjgl-openal"
+  ],
+  "version": "3.1.6",
+  "versionLatest": "3.3.1"
+}
