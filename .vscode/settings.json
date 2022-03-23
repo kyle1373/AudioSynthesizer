@@ -1,0 +1,13 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "libs/lwjgl.jar",
+        "libs/lwjgl-javadoc.jar",
+        "libs/lwjgl-natives-windows.jar",
+        "libs/lwjgl-openal.jar",
+        "libs/lwjgl-openal-javadoc.jar",
+        "libs/lwjgl-openal-natives-windows.jar",
+        "libs/lwjgl-openal-sources.jar",
+        "libs/lwjgl-sources.jar"
+    ]
+}
