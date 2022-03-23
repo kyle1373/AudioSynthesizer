@@ -10,10 +10,10 @@ enum Wavetable {
   private final float[] samples = new float[SIZE];
 
   static {
-   final double FUND_FREQ = 1d / (SIZE / (double)SynthesizerRemastered.AudioInfo.SAMPLE_RATE);
+   final double FUND_FREQ = 1d / (SIZE / (double)ECE45FinalProject.AudioInfo.SAMPLE_RATE);
    for (int i =0; i < SIZE; ++i) {
 
-      double t = i / (double)SynthesizerRemastered.AudioInfo.SAMPLE_RATE;
+      double t = i / (double)ECE45FinalProject.AudioInfo.SAMPLE_RATE;
       double tDivP = t / (1d / FUND_FREQ);
       Sine.samples[i] = (float)Math.sin(Utils.Math.frequencyToAngularFrequency(FUND_FREQ) * t);
       Square.samples[i] = Math.signum(Sine.samples[i]);

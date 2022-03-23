@@ -25,7 +25,7 @@ public class Oscillator extends SynthControlContainer {
 
 
 
-    public Oscillator(SynthesizerRemastered synth) {
+    public Oscillator(ECE45FinalProject synth) {
         super(synth);
         JComboBox<Wavetable> comboBox = new JComboBox<>(Wavetable.values());
         comboBox.setSelectedItem(Wavetable.Sine);
@@ -108,9 +108,9 @@ public class Oscillator extends SynthControlContainer {
 
     public double[] getSampleWaveform(int numSamples) {
         double[] samples = new double[numSamples];
-        double frequency = 1.0 / (numSamples / (double)SynthesizerRemastered.AudioInfo.SAMPLE_RATE) * 4.0;
+        double frequency = 1.0 / (numSamples / (double)ECE45FinalProject.AudioInfo.SAMPLE_RATE) * 4.0;
         int index = 0;
-        int stepSize = (int)(Wavetable.SIZE * Utils.Math.offsetTone(frequency, getToneOffset()) / SynthesizerRemastered.AudioInfo.SAMPLE_RATE);
+        int stepSize = (int)(Wavetable.SIZE * Utils.Math.offsetTone(frequency, getToneOffset()) / ECE45FinalProject.AudioInfo.SAMPLE_RATE);
         for (int i = 0; i < numSamples; ++i) {
             samples[i] = wavetable.getSamples()[index] * getVolumeMultiplier();
             index = (index + stepSize) % Wavetable.SIZE;
@@ -129,6 +129,6 @@ public class Oscillator extends SynthControlContainer {
 
 
     private void applyToneOffset() {
-        wavetableStepSize = (int) (Wavetable.SIZE * Utils.Math.offsetTone(keyFrequency, getToneOffset()) / SynthesizerRemastered.AudioInfo.SAMPLE_RATE);
+        wavetableStepSize = (int) (Wavetable.SIZE * Utils.Math.offsetTone(keyFrequency, getToneOffset()) / ECE45FinalProject.AudioInfo.SAMPLE_RATE);
     }
 }

@@ -89,7 +89,7 @@ import static org.lwjgl.openal.ALC10.*;
 
      private void bufferSamples(short[] samples) {
          int buf = buffers[bufferIndex++];
-         alBufferData(buf, AL_FORMAT_MONO16, samples, SynthesizerRemastered.AudioInfo.SAMPLE_RATE);
+         alBufferData(buf, AL_FORMAT_MONO16, samples, ECE45FinalProject.AudioInfo.SAMPLE_RATE);
          alSourceQueueBuffers(source, buf);
          bufferIndex %= BUFFER_COUNT;
 

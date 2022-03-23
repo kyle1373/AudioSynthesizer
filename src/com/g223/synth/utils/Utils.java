@@ -81,7 +81,7 @@ public class Utils {
     }
 
     public static class WindowDesign {
-        public static final Border LINE_BORDER = BorderFactory.createLineBorder(new Color(0, 38, 114));
+        public static final Border LINE_BORDER = BorderFactory.createLineBorder(Color.BLACK);
     }
 
     public static class Math {

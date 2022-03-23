@@ -9,7 +9,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.HashMap;
 
-public class SynthesizerRemastered {
+public class ECE45FinalProject {
 
     private static final HashMap<Character, Double> KEY_FREQUENCIES = new HashMap<>();
 
@@ -79,7 +79,7 @@ public class SynthesizerRemastered {
     }
 
 
-    SynthesizerRemastered() {
+    ECE45FinalProject() {
 
         int y = 0;
         for (int i =0; i < oscillators.length; ++i) {

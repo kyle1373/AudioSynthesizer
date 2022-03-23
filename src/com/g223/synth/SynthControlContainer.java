@@ -7,10 +7,10 @@ public class SynthControlContainer extends JPanel {
 
 
     protected boolean on;
-    private SynthesizerRemastered synth;
+    private ECE45FinalProject synth;
     private Point mouseClickLocation;
 
-    public SynthControlContainer(SynthesizerRemastered synth) {
+    public SynthControlContainer(ECE45FinalProject synth) {
         this.synth = synth;
 
     }
