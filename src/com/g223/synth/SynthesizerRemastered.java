@@ -18,6 +18,7 @@ public class SynthesizerRemastered {
 
     private final Oscillator[] oscillators = new Oscillator[4];
     private final WaveViewer waveViewer = new WaveViewer(oscillators);
+    private final OmegaViewer omegaViewer = new OmegaViewer();
     private final Visualizer keyVisualization = new Visualizer();
     private final JFrame frame = new JFrame("ECE45 Project");
     private AudioThread audioThread = new AudioThread(() ->
@@ -78,28 +79,21 @@ public class SynthesizerRemastered {
     }
 
 
-
-
-
-
-
-
-
-
-
     SynthesizerRemastered() {
 
         int y = 0;
         for (int i =0; i < oscillators.length; ++i) {
             oscillators[i] = new Oscillator(this);
-            oscillators[i].setBounds(5, y, 160, 90);
+            oscillators[i].setBounds(5, y, 210, 95);
             //oscillators[i].setLocation(5,y);
             frame.add(oscillators[i]);
             y += 100;
         }
 
-        waveViewer.setBounds(190, 0, 400, 200);
+        waveViewer.setBounds(220,60, 421, 190);
         frame.add(waveViewer);
+        omegaViewer.setBounds(220, 260, 450, 130);
+        frame.add(omegaViewer);
         frame.addKeyListener(keyAdapter);
         frame.addWindowListener(new WindowAdapter() {
             @Override
@@ -108,10 +102,10 @@ public class SynthesizerRemastered {
 
             }
         });
-        keyVisualization.setBounds(0, 400, 360, 30);
+        keyVisualization.setBounds(0, 400, 648, 54);
         frame.add(keyVisualization);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        frame.setSize(1000, 1000);
+        frame.setSize(662, 490);
         frame.setResizable(false);
         frame.setLayout(null);
         frame.setLocationRelativeTo(null);
@@ -124,6 +118,16 @@ public class SynthesizerRemastered {
 
     public void updateWaveviewer() {
         waveViewer.repaint();
+        double[] amplitudes = new double[4];
+        double[] pitches = new double[4];
+        for(int i = 0; i < 4; i++){
+            pitches[i] = oscillators[i].getToneOffset() * 1000;
+            amplitudes[i] = oscillators[i].getVolumeMultiplier() * 100;
+        }
+        // call the functions which pass in amplitudes and pitches
+        omegaViewer.updateValues(amplitudes, pitches);
+        // repaint
+        omegaViewer.repaint();
     }
 
     public static class AudioInfo {

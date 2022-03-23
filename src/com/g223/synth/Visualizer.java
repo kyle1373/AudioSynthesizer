@@ -11,12 +11,12 @@ public class Visualizer extends JPanel{
     public Visualizer(){
         // Do nothing
     }
-
+    
     @Override
     protected void paintComponent(Graphics g){
         super.paintComponent(g);
     
-        final int LENGTHWIDTH = 30;
+        final int LENGTHWIDTH = 54;
         Color Brown = new Color(0, 0, 24);
         Color LightBrown = new Color(0, 128, 174);
         for(int i = 0; i < keys.length(); i++){
@@ -24,7 +24,7 @@ public class Visualizer extends JPanel{
             g.fillRect(i * LENGTHWIDTH, 0, LENGTHWIDTH, LENGTHWIDTH);
             g.setColor(Brown);
             g.drawRect(i * LENGTHWIDTH, 0, LENGTHWIDTH, LENGTHWIDTH);
-            g.drawString(" " + Character.toLowerCase(keys.charAt(i)), i * LENGTHWIDTH + 10, LENGTHWIDTH - 10);
+            g.drawString(" " + Character.toLowerCase(keys.charAt(i)), i * LENGTHWIDTH + 23, LENGTHWIDTH - 23);
         }
     }
 

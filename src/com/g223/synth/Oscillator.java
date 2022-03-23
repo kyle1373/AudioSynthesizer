@@ -58,7 +58,7 @@ public class Oscillator extends SynthControlContainer {
         JLabel toneText = new JLabel("Pitch");
         toneText.setBounds(80,41,75,20);
         add(toneText);
-        JLabel volumeParameter = new JLabel("100");
+        JLabel volumeParameter = new JLabel(" 100");
         volumeParameter.setBounds(10,60,58,20);
         volumeParameter.setBorder(Utils.WindowDesign.LINE_BORDER);
         Utils.ParameterHandling.addParameterMouseListeners(volumeParameter, this, 0, 100, 1, volume, () -> {
@@ -74,14 +74,14 @@ public class Oscillator extends SynthControlContainer {
         volumeText.setBounds(11, 40, 75, 25);
         add(volumeText);
         JButton button = new JButton("Mute");
-        button.setBounds(90, 15, 60, 20);
+        button.setBounds(110, 15, 80, 20);
         button.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 volume.val = 0;
                 volumeParameter.setText("0");
-                
+                synth.updateWaveviewer();
             }
         });
         add(button);
@@ -118,11 +118,11 @@ public class Oscillator extends SynthControlContainer {
         return samples;
     }
 
-    private double getToneOffset() {
+    public double getToneOffset() {
         return toneOffset.val / 1000.0;
     }
 
-    private double getVolumeMultiplier() {
+    public double getVolumeMultiplier() {
         return volume.val / 100.0;
     }
             
