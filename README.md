@@ -19,7 +19,7 @@ Key Visualizer <br />
 
 # Applied Concepts of Synthesizer to Class Concepts
 
-If we add multiple waves together, then the waves are added together in the time domain. However, while it is easy to add waves in the time domain, it is nearly impossible to deconstruct the wave through just its time domain graph. However, the Fourier Transform solves this issue through taking a signal in the time domain and transforming into its frequency domain counterpart. This is so when multiple waves are combined, it is still possible to extract the waves through their Fourier coefficient peaks in their Fourier Series. Higher frequencies result in higher Fourier coefficients, and lower frequencies result in lower Fourier coefficients. The Fourier Transform graph featured in this audio synthesizer is the result of a function of each oscillator’s amplitude and pitch.
+If we add multiple waves together, then the waves are added together in the time domain. However, while it is easy to add waves in the time domain, it is nearly impossible to deconstruct the wave through just its time domain graph. The Fourier Transform solves this issue through taking a signal in the time domain and transforming into its frequency domain counterpart. This is so when multiple waves are combined, it is still possible to extract the waves through their Fourier coefficient peaks in their Fourier Series. Higher frequencies result in higher Fourier coefficients, and lower frequencies result in lower Fourier coefficients. The Fourier Transform graph featured in this audio synthesizer is the result of a function of each oscillator’s amplitude and pitch.
  
 
 # Demo
@@ -34,7 +34,7 @@ If you are using Windows, run the ECE45Windows.jar file.
 If you are using MacOS, run the ECE45MacOS.jar file. 
 On MacOS if you get an unidentified developer error, simply click ok. Next highlight the Jar File then click open from the dropdown, it will now open successfully.
 
-You can also build the project yourself by cloning the repo and constructing a .jar file, but it is highly advised to just simply download the .jar files above. 
+You can also build the project yourself by cloning the repository and constructing a .jar file, but it is highly advised to just simply download the .jar files above. 
 
 
 # Usage Instructions
