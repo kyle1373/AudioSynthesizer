@@ -38,21 +38,26 @@ You can also build the project yourself by cloning the repo and constructing a .
 
 
 # Usage Instructions
-Select keys from the following to play a sound
-Q, W, E, R, T, Y, U, I, O, P, \[, and \]
-You can hold a note while changing your oscillators (wave-form, frequency, and amplitude).
-To change Wave type:
-Select the drop-down in the box of choice
-Click on your desired wave-form
-To change Frequency / Pitch:
-While clicking the pitch box, drag your mouse up or down to your desired value.
-To change Amplitude:
-While clicking the amplitude box, drag your mouse up or down to your desired value.
-To mute a signal:
-Click the mute button located inside the signal box of your choice. 
-To unmute a signal:
-Increase the amplitude of the signal of choice to unmute. 
-
-
-
+Select keys from the following to play a sound <br />
+Q, W, E, R, T, Y, U, I, O, P, \[, and \] <br />
+You can hold a note while changing your oscillators (wave-form, frequency, and amplitude). <br />
+ <br />
+To change Wave type: <br />
+Select the drop-down in the box of choice <br />
+Click on your desired wave-form <br /> 
+<br />
+To change Frequency / Pitch: <br />
+While clicking the pitch box, drag your mouse up or down to your desired value. <br />
+ <br />
+To change Amplitude: <br />
+While clicking the amplitude box, drag your mouse up or down to your desired value. <br />
+ <br />
+To mute a signal: <br />
+Click the mute button located inside the signal box of your choice.  <br />
+ <br />
+To unmute a signal: <br />
+Increase the amplitude of the signal of choice to unmute.  <br />
+ <br />
+ <br />
+ <br />
 Enjoy!
