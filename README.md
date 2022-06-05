@@ -2,19 +2,19 @@
 
 # Introduction and Potential Applications
 
-Welcome to this multifunctional synthesizer written entirely in Java! Audio Synthesizers appear in the world of music production and more, as they can be used for visualization of the Fourier Transform, modeling sounds from real-world applications, and even automation tools for speech recognition programs. This application provides an intuitive way of visualizing waveforms using amplification and attenuation of four different oscillators consisting of sine, square, saw, and triangle waveforms!
+Welcome to our multifunctional synthesizer written entirely in Java! This was a project originally done by Kyle Wade, Delvin Bajoua, Jerry Qiao, and Youssef Georgy from a Circuits and Systems class. After mathematically learning about Fourier Transforms one class, we thought it would be interesting to create a visualization of a synthesizer to experience Fourier Transforms in real time through audio and visual representation. Audio Synthesizers appear in the world of music production and more, as they can be used for visualization of the Fourier Transform, modeling sounds from real-world applications, and even automation tools for speech recognition programs. This application provides an intuitive way of visualizing waveforms using amplification and attenuation of four different oscillators consisting of sine, square, saw, and triangle waveforms! Read this write up to find a demo of the app and a tutorial on how to set it up.
 
 
 # Features of the Synthesizer 
 
-User-friendly interface 
-Frequency Adjuster
-Amplitude Adjuster
-Signal Visualization graph in time domain
-Signal Visualization graph in frequency domain (Fourier Transform)
-Wave Selection Drop Down (Sine, Square, Triangle, and Saw)
-Mute Capability 
-Key Visualizer
+User-friendly interface  <br />
+Frequency Adjuster <br />
+Amplitude Adjuster <br />
+Signal Visualization graph in time domain <br />
+Signal Visualization graph in frequency domain (Fourier Transform) <br />
+Wave Selection Drop Down (Sine, Square, Triangle, and Saw) <br />
+Mute Capability  <br />
+Key Visualizer <br />
 
 
 # Applied Concepts of Synthesizer to Class Concepts
