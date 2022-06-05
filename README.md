@@ -38,7 +38,7 @@ You can also build the project yourself by cloning the repo and constructing a .
 
 
 # Usage Instructions
-**To play a sound** <br />
+**To play a sound:** <br />
 Select Q, W, E, R, T, Y, U, I, O, P, \[, or \] to play different requencies. <br />
 You can hold a note while changing your oscillators (wave-form, frequency, and amplitude). <br />
 <br />
@@ -72,5 +72,5 @@ https://learningsynths.ableton.com/en/playground<br />
 Sound Synthesis Theory Conceptual Article:<br />
 https://en.wikibooks.org/wiki/Sound_Synthesis_Theory/Introduction<br />
 <br />
- <br />
+<br />
 Enjoy!
