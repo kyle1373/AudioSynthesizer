@@ -38,26 +38,40 @@ You can also build the project yourself by cloning the repo and constructing a .
 
 
 # Usage Instructions
-Select keys from the following to play a sound <br />
-Q, W, E, R, T, Y, U, I, O, P, \[, and \] <br />
+**To play a sound** <br />
+Select Q, W, E, R, T, Y, U, I, O, P, \[, or \] to play different requencies. <br />
 You can hold a note while changing your oscillators (wave-form, frequency, and amplitude). <br />
- <br />
-To change Wave type: <br />
-Select the drop-down in the box of choice <br />
-Click on your desired wave-form <br /> 
 <br />
-To change Frequency / Pitch: <br />
+ <br />
+**To change Wave type:** <br />
+Select the drop-down in the box of choice. <br />
+Click on your desired wave-form. <br /> 
+<br />
+**To change Frequency / Pitch:** <br />
 While clicking the pitch box, drag your mouse up or down to your desired value. <br />
  <br />
-To change Amplitude: <br />
+**To change Amplitude:** <br />
 While clicking the amplitude box, drag your mouse up or down to your desired value. <br />
  <br />
-To mute a signal: <br />
+**To mute a signal:** <br />
 Click the mute button located inside the signal box of your choice.  <br />
  <br />
-To unmute a signal: <br />
+**To unmute a signal:** <br />
 Increase the amplitude of the signal of choice to unmute.  <br />
  <br />
- <br />
+# Sources and Libraries used
+Thank you to “G223 Productions” for helping with the project framework as well as libraries and functionality:<br />
+https://www.youtube.com/channel/UCjGTOnMHKk73DC9BTsf2c9Q <br />
+<br />
+Thank you to LWJGl Library used within the project:<br />
+Specifications: Zip bundle version 3.1.6, Contents: OpenAL<br />
+https://www.lwjgl.org/customize<br />
+<br />
+Helpful Conceptual Review:<br />
+https://learningsynths.ableton.com/en/playground<br />
+<br />
+Sound Synthesis Theory Conceptual Article:<br />
+https://en.wikibooks.org/wiki/Sound_Synthesis_Theory/Introduction<br />
+<br />
  <br />
 Enjoy!
