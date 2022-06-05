@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/59634395/172030275-4300cfe7-7ed6-495c-8620-8c5f26dc33aa.png)
+![image](https://user-images.githubusercontent.com/59634395/172030285-ea81e00c-8585-4cc1-bdee-a7fe8729bf4d.png)
 
 # Introduction and Potential Applications
 
